@@ -3,13 +3,24 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
+    "start": "concurrently \"vite --host localhost\" \"json-server --host localhost --watch db.json\"",
     "dev": "vite",
+    "json:server": "json-server --watch db.json",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.2.2",
+    "concurrently": "^7.6.0",
+    "dayjs": "^1.11.7",
+    "json-server": "^0.17.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.7.1",
+    "react-router-dom": "^6.6.1",
+    "styled-components": "^5.3.6",
+    "timer-node": "^5.0.7",
+    "uuidv4": "^6.2.13"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",
